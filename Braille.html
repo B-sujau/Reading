@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link rel="stylesheet" href="only/braile.css">
+<link rel="stylesheet" href="header.css">
+ <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	
+	
+<!--fancybox files -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	
+<!--AOS-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+<title>Braile</title>
+<style>	
+/*about indside*/
+@media(min-width:768px){
+	.con{font-size: 25px;}
+	.title{font-size: 48px;}
+	.bb{font-size: 35px;}
+	.line{height: 20px;}
+	header input[id="menuicon"]+label .line{
+		background-color: white;}
+	#back{background-image: url("arrow.png"); width: 38px; height: 23px;}
+	#num2{height: 150px;}
+	header input[id="menuicon"]+label{width: 32px; height: 20px;}
+		header input[id="menuicon"]+label .line{
+					width: 100%;height: 3px;}
+	#line{width: 100px; height: 7px;}
+	
+}
+/*768*/
+@media(min-width: 768px){
+	.image{background-image: url("name/Mbackk.png"); background-size: cover;}
+	#next{font-size: 15px;}
+	#poto{width: 40%; height: 300px; margin: 5% 5% 13% 0;}
+	#num3{height: 150px;}
+	#poto2{height: 260px;}
+	#num5{height: 150px;}
+	#num6{height: 150px;}
+	#num7{height: 150px;}
+
+}
+/*1024*/
+	@media (min-width:1024px){
+		.con{font-size: 28px;}
+		#poto{width: 40%; height: 450px; margin: 5% 5% 13% 0;}
+		#num2{height: 195px;}
+		#num3{height: 195px;}
+		#poto2{height: 350px;}
+		#num5{height: 195px;}
+		#num6{height: 195px;}
+		#num7{height: 195px;}
+		
+		header input[id="menuicon"]+label{
+			margin-right: 8%; width: 35px;height: 25px;}
+			header input[id="menuicon"]+label .line{
+			width: 100%;height: 4px;}
+		#bar{height: 60px;}
+		#back{width: 44px; height: 27px;}
+	}
+</style>
+
+</head>
+<body>
+	<div class="image">
+		<div id="bar"></div>
+		<header>
+			<div id="back" onClick="location.href='index.html'"></div>
+
+			<input type="checkbox" id="menuicon">
+			<label for="menuicon" onClick="location.href='menu.html'">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</label>
+		</header>
+	</div>
+	<div id="line" class="animate__animated animate__lightSpeedInLeft"></div>
+	<div class="main animate__animated animate__slideInUp">
+		<p class="title animate__animated animate__fadeInUp animate__delay-1s animate__slow">점자(Braile)</p>
+		<p class="con">
+			점자는 지면이 볼록 튀어나오게 점을 찍어 손가락
+			끝의 촉각으로 읽도록 만들어진 특수 문자이다.
+		</p>
+		<p class="con b">
+			시각장애인이 지식과 정보를 습득할 수 있는 가장 
+			중요한 도구이며 세상과 소통하는 통로이자 세상을 
+			보는 눈이다.
+		</p>
+		<div class="img" id="poto" data-aos="fade-up"
+			 data-aos-duration="2000">
+		</div>
+		
+		<p class="con">
+			점자는 6개의 점이 모여 한 칸이 된다.<br>
+			이 6개의 점은 세로로 3점, 가로로 2점으로 
+			구성되며, 각 점에 1에서 6까지의 번호를 붙여 
+			사용한다. 
+		</p>
+		<p class="con b">
+			이 6개의 점 중에 어떤 점을 돌출시키는 지에 따라 
+			63개의 각각 다른 점형이 생기며, 이 점형에 의미가 
+			부여된 문자이다. 
+		</p>
+		<p class="bb"> 점자의 날 </p>
+		<p class="con">
+			시각장애인의 세종대왕이라 불리는 송암 박두성 
+			선생이 시각장애인을 위해 한글 점자를 만들어
+			반포한 1926년 11월 4일을 기념하는 날이다. 
+		</p>
+		<div id="cover">
+			<p class="bb" id="nnext"> 점자 일람표 </p>
+			<p id="next"><a href="index2.html">자세히</a></p>
+		</div>
+		<a data-fancybox="gallery" href="name/table2.png">
+			<div class="img" id="num2" 
+				 data-aos="fade-up"
+				 data-aos-duration="1000">
+			</div>
+		</a>
+		<a data-fancybox="gallery" href="name/table3.png">
+			<div class="img" id="num3" data-aos="fade-up"
+				 data-aos-duration="1000">
+			</div>
+		</a>
+		<a data-fancybox="gallery" href="name/table4.png">
+			<div class="img" id="poto2" data-aos="fade-up"
+				 data-aos-duration="1000">
+			</div>
+		</a>
+		<a data-fancybox="gallery" href="name/table5.png">
+			<div class="img" id="num5" data-aos="fade-up"
+				 data-aos-duration="1000">
+			</div>
+		</a>
+		<a data-fancybox="gallery" href="name/table6.png">
+			<div class="img" id="num6" data-aos="fade-up"
+				 data-aos-duration="1000">
+			</div>
+		</a>
+		<a data-fancybox="gallery" href="name/tabl7.png">
+			<div class="img" id="num7" data-aos="fade-up"
+				 data-aos-duration="1000">
+			</div>
+		</a>
+	</div>
+	<script>
+  AOS.init();
+</script>
+</body>
+</html>

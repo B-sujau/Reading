@@ -1,0 +1,181 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>select</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	
+<link rel="stylesheet" href="question.css">	
+	
+<style>
+	
+	@media (min-width:768px){
+		#back{width: 38px; height: 23px;}
+		#quiz {	margin-top: 20%; }
+		#question { font-size: 28px;  }
+		.buttons { margin: 120px auto 0;}
+		.btn { margin: 10px 20px 10px 20px;
+			border: 2px solid #FFFFFF;
+			   width: 300px;
+				height: 60px;
+			   font-size: 25px; }
+		#progress {font-size: 18px;}
+	}
+	
+	@media (min-width:1024px){
+		#back{width: 44px; height: 27px;}
+		#quiz {	margin-top: 20%; }
+		#question { font-size: 32px;  }
+		.buttons { margin: 120px auto 0;}
+		.btn { margin: 20px 30px 20px 30px;
+			border: 3px solid #FFFFFF;
+			   width: 350px;
+				height: 70px;
+			   font-size: 28px; }
+		#progress {font-size: 22px;}
+	}
+	
+</style>
+</head>
+
+<body>
+	<div id="bar"></div>
+	<div id="back" onClick="location.href='index3.html'"></div>
+	<div id="all">
+		
+		<div id="quiz">
+		  <p id="question"></p>
+
+		  <div class="buttons">
+			 <button class="btn"></button>
+			 <button class="btn"></button>
+			 <button class="btn"></button>
+			 <button class="btn"></button>
+		  </div>
+
+		  <footer>
+			 <p id="progress">진행 정보</p>
+		  </footer>
+   		</div>
+	</div>
+	
+	
+	<script>
+		// 문제 객체(생성자 함수)
+function Question(text, choice, answer) {
+   this.text = text; // 질문 텍스트
+   this.choice = choice; // 선택할 답들(배열)
+   this.answer = answer; // 정답 정보
+}
+
+// 퀴즈 정보 객체
+function Quiz(questions) {
+   this.score = 0; // 점수
+   this.questions = questions; // 문제
+   this.questionIndex = 0; // 문제 번호
+}
+
+// 정답 확인 메서드
+Quiz.prototype.correctAnswer = function(answer) {
+   return answer == this.questions[this.questionIndex].answer;
+}
+
+
+var questions = [
+    new Question('&#39;억&#39;에 해당되는 점자를 찾으시오.', ['⠡', '⠟', '⠹', '⠙'], '⠹'),
+	
+   new Question('ㄱ/ㄴ/ㄷ은 몇점을 기본점을 두는가?', ['1점', '4점', '5점', '6점'], '4점'),
+	
+   new Question('자음 종성에 된소리ㄲ은 몇점으로 표기하는가?', ['⠠', '⠁⠁', '⠉', '⠁'], '⠁⠁'),
+
+   new Question('&#39;그리하여&#39;에 해당되는 점자를 찾으시오.', ['⠁⠱', '⠁⠎', '⠁⠢', '⠁⠥'], '⠁⠱'),
+   
+   new Question('&#39;!&#39;에 해당되는 점자를 찾으시오.', ['⠰', '⠖', '⠙', '⠛'], '⠖'),
+		
+   new Question('&#39;사&#39;의 약자를 찾으시오.', ['⠘', '⠫', '⠉', '⠇'], '⠇'),
+		
+   new Question('⠧⠗에 해당되는 한글을 찾으시오.', ['ㅙ', 'ㅞ', 'ㅟ', 'ㅒ'], 'ㅙ'),
+	
+	new Question('&#39;취&#39;에 해당되는 점자를 찾으시오.', ['⠰⠍', '⠰⠍⠗', '⠰⠧⠶', '⠰⠏⠗'], '⠰⠍⠗'),
+	
+	new Question('로마자 종료표를 적어야하는 상황을 고르시오.', ['mute: 음소거', 'B5는 A4보다 크다.', '높이 3M를 쌓아 올린다.', '사회 논제&#40;Social issue&#41;'], '높이 3M를 쌓아 올린다.'),
+	
+	new Question('⠚⠧⠕⠓⠕⠶⠖에 해당되는 한글을 찾으시오.', ['화이팅!', '힘내자!', '힘들다!', '과제~'], '화이팅!')
+];
+
+// 퀴즈 객체 생성
+var quiz = new Quiz(questions);
+
+// 문제 출력 함수
+function updateQuiz() {
+   var question = document.getElementById('question');
+   var idx = quiz.questionIndex + 1;
+   var choice = document.querySelectorAll('.btn');
+
+   // 문제 출력
+   question.innerHTML = idx + '. ' + quiz.questions[quiz.questionIndex].text;
+
+   // 선택 출력
+   for (var i = 0; i < 4; i++) {
+      choice[i].innerHTML = quiz.questions[quiz.questionIndex].choice[i];
+   }
+
+   progress();
+}
+
+function progress() {
+   var progress = document.getElementById('progress');
+   progress.innerHTML = '문제 ' + (quiz.questionIndex + 1) + '/ ' + quiz.questions.length;
+}
+
+var btn = document.querySelectorAll('.btn');
+
+// 입력 및 정답 확인 함수
+function checkAnswer(i) {
+   btn[i].addEventListener('click', function() {
+      var answer = btn[i].innerText;
+
+      if (quiz.correctAnswer(answer)) {
+         alert('정답입니다!');
+         quiz.score++;
+      } else {
+         alert('틀렸습니다!');
+      }
+
+      if (quiz.questionIndex < quiz.questions.length - 1) {
+         quiz.questionIndex++;
+         updateQuiz();
+      } else {
+         result();
+      }
+   });
+}
+
+function result() {
+   var quizDiv = document.getElementById('quiz');
+   var per = parseInt((quiz.score * 100) / quiz.questions.length);
+   var txt = '<h2>결과</h2>' + '<h3 id="score">당신의 점수: ' + quiz.score + '/' + quiz.questions.length + '<br><br>' + per + '점' + '</h2>';
+
+   quizDiv.innerHTML = txt;
+
+   // 점수별 결과 텍스트
+   if (per < 60) {
+      txt += '<h2>더 분발하세요</h2>';
+      quizDiv.innerHTML = txt;
+   } else if (per >= 60 && per < 80) {
+      txt += '<h2>무난한 점수네요</h2>'
+      quizDiv.innerHTML = txt;
+   } else if (per >= 80) {
+      txt += '<h2>훌륭합니다</h2>'
+      quizDiv.innerHTML = txt;
+   }
+}
+
+for (var i = 0; i < btn.length; i++) {
+   checkAnswer(i);
+}
+
+updateQuiz();
+	</script>
+</body>
+</html>

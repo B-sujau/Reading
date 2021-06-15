@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>정독</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="designstyle.css">
+<link rel="stylesheet" href="sub.css">
+	
+	<style>
+		@media (max-width:768px){
+			.all{height: 100%;}
+		}
+		
+	@media (min-width:768px){
+		.all{margin-bottom: 15%;}
+		#back{width: 38px; height: 23px;}
+		#en{ font-size: 32px;}
+		.say{font-size: 25px; margin-top: 10%;}
+		.box{height: 17%;}
+		.otbox{height: 17%;}
+		
+		h3{font-size: 26px;}
+		.space{font-size: 25px;}
+		.all{height: 120%;}
+	}
+	
+	@media (min-width:1024px){
+		#back{width: 44px; height: 27px;}
+		.say{font-size: 28px;}
+		#en{ font-size: 36px;}
+		h3{font-size: 25px;}
+		.space{font-size: 28px;}
+	}
+		
+    </style>
+</head>
+<body>
+	<div class="front">
+		<div id="bar"></div>
+			<header>
+			<div id="back" onClick="history.go(-1)"></div>
+		</header>
+	</div>
+	<div class="clear"></div>
+	<div class="all">
+	<p id="en">점자 생활용구</p>
+	<p class="say">
+		시각장애로 인한 생활의 불편을 최소화하기 위하여 일상생활과 교육, 재활, 의료, 스포츠, 레저 등의 제 분야에서 특별히 시각장애인만을 위하여 제작하거나 시각장애인도 사용이 가능하도록 고안된 모든 생활용품을 통칭한다.	
+	</p>
+	<br>
+	<h3>점자 학습 용구</h3>
+		<div class="box">
+			<div id="one"></div>
+			<span class="space">점자 책</span>
+		</div>
+		<hr>
+		<div class="box">
+			<div id="two"></div>
+			<span class="space">점관과 점</span>
+		</div>
+		<hr>
+		<div class="otbox">
+			<div id="three"></div>
+			<span class="space">점자 타자기</span>
+		</div>
+	</div>
+</body>
+</html>

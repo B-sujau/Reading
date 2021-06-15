@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+	body{margin:auto; padding: 0;}
+	
+	#bar{ width: 100%; height: 44px;}
+	
+
+#back{ width: 32px; height: 17px; float: left;
+		background-image: url("arrow2.png"); margin: 0 7%;
+		background-size: cover;}
+	
+	
+	
+	 header{ width: 100%;height:20px; margin-bottom: 70px;}
+	 header input[id="menuicon"]+label .line:nth-last-child(1){
+			top:0;
+		}
+	 header input[id="menuicon"]+label .line:nth-last-child(2){
+			top:50%;
+			transform: translateY(-50%);
+		}
+	 header input[id="menuicon"]+label .line:nth-last-child(3){
+			bottom:0;
+		}
+	header input[id="menuicon"]+label .line{
+		background-color: black;
+	}
+	header input[id="menuicon"]{display: none;}
+		header input[id="menuicon"]+label{float: right;					margin-right: 8%;display: block; 
+			width: 22px; height: 16px;	position: relative;	z-index: 3;	}
+		header input[id="menuicon"]+label .line{
+			display: block; position: absolute;	width: 100%;height: 2px;}
+	.img{background-color: aliceblue; display: inline-block;}
+	.image{height: 23em; background-color: #E99C9D;
+			position: relative; z-index: 1;}
+	.main{width: 85%; position: relative; z-index: 1; top:-7em; text-align: center; height: 50em; background-color: white; float: right;}
+	#line{width: 85px; height: 5px; background-color: #F9AC66;
+		position: relative; z-index: 2; top:-4.5em; left: 5%;}
+	.title{font-family:"SF Pro Display"; font-size: 35px; text-align: left;}
+	.con{ font-family:"AppleSDGothicNeoL00"; font-size: 15px;
+		 left: 100%; text-align: left;}
+	#cover{width: 100%; height: 11%;}
+	#nnext{float: left;}
+	#next{float: right; margin: 17% 2.5% 5%; font-size: 10px;}
+	#next a{text-decoration: none; color:#ECE6CE;}
+footer{font-family:"AppleSDGothicNeoL00"; font-size: 8px; color: #DADADA; text-align: left;}

@@ -1,0 +1,198 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="demo.css">
+<link rel="stylesheet" href="only/hangul.css">
+	
+<!--fancybox files -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	
+<!--AOS-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="swiper.min.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+	
+<title>Braile</title>
+<style>
+	/*about indside*/
+@media(min-width:768px){
+	.con{font-size: 25px;}
+	.title{font-size: 48px;}
+	.bb{font-size: 35px;}
+	.line{height: 20px;}
+	header input[id="menuicon"]+label .line{
+		background-color: white;}
+	#back{background-image: url("arrow.png"); width: 38px; height: 23px;}
+	#num2{height: 150px;}
+	header input[id="menuicon"]+label{width: 32px; height: 20px;}
+		header input[id="menuicon"]+label .line{
+					width: 100%;height: 3px;}
+	.image{background-image: url("hanggul/Mhanback.png");}
+	#poto{width: 95%; height: 230px;}
+	#poto2{width: 80%; height: 720px;}
+	#say{font-size: 25px;}
+	.swiper-container {width: 90%; height:320px;}
+    .swiper-slide { width: 30px;height: 100%;}
+	#line{width: 100px; height: 7px;}
+	footer{font-size: 15px;}
+}
+	@media(min-width: 1024px){
+		.con{font-size: 28px;}
+		.title{margin-top: 7%;}
+		#poto{width: 95%; height: 300px;}
+		#poto2{width: 70%; height: 880px;}
+		#say{font-size: 35px;}
+		.swiper-container {width: 90%; height:400px;}
+		.swiper-slide { width: 20px;height: 100%;}
+		
+		
+		header input[id="menuicon"]+label{
+			margin-right: 8%; width: 35px;height: 25px;}
+			header input[id="menuicon"]+label .line{
+			width: 100%;height: 4px;}
+		#bar{height: 60px;}
+		#back{width: 44px; height: 27px;}
+	}
+</style>
+
+</head>
+<body style="overflow-x:hidden">
+	<div class="image">
+		<div id="bar"></div>
+		<header>
+			<div id="back" onClick="location.href='index.html'"></div>
+
+			<input type="checkbox" id="menuicon">
+			<label for="menuicon" onClick="location.href='menu.html'">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</label>
+		</header>
+	</div>
+	<div id="line" class="animate__animated animate__fadeInLeft"></div>
+	<div class="main animate__animated animate__slideInUp">
+		<p class="title animate__animated animate__fadeInUp animate__delay-1s animate__slow">박두성</p>
+		<p class="con">
+			인천광역시 강화군(구 경기도 강화군) 출신. <br>
+			1906년 한성사범학교를 졸업하고 
+			어의동보통학교(於義洞普通學校) 교사로 있다가 
+			1913년 제생원 맹아부(濟生院盲啞部) 교사로 
+			취임하였으며, 이때부터 맹인교육에 전념하기 
+			시작하였다.
+		</p>
+		<p class="con b">
+			독립운동가인 이동휘 선생으로부터 암자의 
+			소나무처럼 절개를 굽히지 말라는 의미의 
+			'송암'이라는 아호를 받았다.
+		</p>
+		<div class="img2" id="poto" data-aos="fade-left"
+			 data-aos-duration="1000">
+		</div>
+		<p class="bb"> 훈맹정음 </p>
+		<p class="con">
+			학생들을 가르치면서 일어 점자로만 교육을 해야 
+			하는 것에 불만을 가져오다가 1920년부터 한글 점자 
+			연구에 착수하였다. 
+		</p>
+		<p class="con d">
+			1923년 1월 비밀리에 조선어점자연구위원회를 
+			조직하는 등 7년간의 연구를 거쳐 1926년 이른바 
+			‘훈맹정음(訓盲正音)’이라 불리는 한글 점자를 
+			완성하였다.
+		</p>
+		<div class="img" id="poto2" data-aos="fade-down"
+			 data-aos-duration="1000">
+		</div>
+		<p id="say">" 눈이 사람의 모든 것은 아닙니다. <br>
+					중요한건 영혼입니다. " </p>
+		<p class="con">
+			‘훈맹정음’은 자음과 모음, 숫자도 다 들어가 있는 
+			서로 다른 예순세 개의 한글 점자로, 배우기 쉽고, 점 
+			수효가 적고, 서로 헷갈리지 않아야 한다는 세 가지 
+			원칙에 기초하여 만들었다.
+		</p>
+		<p class="con d">
+			자음 첫소리는 기본점의 원리를 이용하여 만들었다. 
+			자음의 받침은 자음의 첫소리를 좌우 또는 상하로 
+			이동시켜 만들었는데, 좌우 이동이 어려운 경우는 
+			아래로 1점씩 이동시켜 글자를 만들었다. 
+			모음은 대칭성을 이용해 글자를 만들었다. 
+
+		</p>
+		<p class="con d">
+			그가 쓴 《맹사일지》에는 “점자는 어려운 것이 아니니 
+			배우고 알기는 5분이면 족하고 읽기는 반나절에 
+			지나지 않으며 4, 5일만 연습하면 능숙하게 쓰고 
+			유창하게 읽을 수 있소. 
+
+		</p>
+		<p class="con d">
+			어서 바삐 점자를 배워야 원하는 대로 글을 읽게 되는 
+			것이요.” 라고 기록하며 쉽게 배울 수 있는 한글 
+			점자임을 강조했다.
+		</p>
+		<div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+				<a data-fancybox="gallery" href="hanggul/book1.png"><img src="hanggul/book1.png" width="100%" height="100%">
+				</a>
+			</div>
+            <div class="swiper-slide">
+				<a data-fancybox="gallery" href="hanggul/book2.png"><img src="hanggul/book2.png" width="100%" height="100%">
+				</a>
+			</div>
+            <div class="swiper-slide">
+				<a data-fancybox="gallery" href="hanggul/book3.png"><img src="hanggul/book3.png" width="100%" height="100%">
+				</a>
+			</div>
+            <div class="swiper-slide">
+				<a data-fancybox="gallery" href="hanggul/book5.png"><img src="hanggul/book5.png" width="100%" height="100%">
+				</a>
+			</div>
+            <div class="swiper-slide">
+				<a data-fancybox="gallery" href="hanggul/book6.png"><img src="hanggul/book6.png" width="100%" height="100%">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a data-fancybox="gallery" href="hanggul/book7.png"><img src="hanggul/book7.png" width="100%" height="100%">
+				</a>
+			</div>
+			<div class="swiper-slide">
+				<a data-fancybox="gallery" href="hanggul/book8.png"><img src="hanggul/book8.png" width="100%" height="100%">
+				</a>
+			</div>
+        </div>
+    	</div>
+		<footer>
+			출처: 한국민족문화대백과사전, SBS news,네이버 지식백과, 점자 세상
+		</footer>
+	</div>
+	
+	
+		 <!-- Swiper JS -->
+    <script src="swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 20
+    });
+    </script>
+	<script>
+  AOS.init();
+</script>
+</body>
+</html>

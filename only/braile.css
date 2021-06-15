@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+.image{background-image: url("../name/backk.png"); background-size: cover;}
+	.con{margin: 1% 2.5%;}
+	.main{ padding: 3%;}
+	.b {margin: 5% 2.5%;}
+	[id^="num"], #poto2{width: 100%; margin: 2% 0 5%;}
+	#poto{width: 70%; height: 250px; margin: 5% 0 13%;
+		background-image: url("../name/rlwns.png"); background-size: cover;}
+	.bb{text-align: left; font-family:"SF Pro Display"; font-size: 22px;
+			margin: 13% 2.5% 5%; width: 50%;}
+	#cover{width: 100%; height: 11%;}
+	#nnext{float: left;}
+	#next{float: right; margin: 17% 2.5% 5%; font-size: 10px;}
+	#next a{text-decoration: none; color:#ECE6CE;}
+	
+	#num2{background-image: url("../name/table2.png"); background-size: cover; height: 70px;}
+	#num3{background-image: url("../name/table3.png"); background-size: cover; height: 70px;}
+	#poto2{background-image: url("../name/table4.png"); background-size: cover; height: 119px;}
+	#num5{background-image: url("../name/table5.png"); background-size: cover; height: 70px;}
+	#num6{background-image: url("../name/table6.png"); background-size: cover; height: 70px;}
+	#num7{background-image: url("../name/table7.png"); background-size: cover; height: 70px; margin: 2% 0 15%;}

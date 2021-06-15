@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+header input[id="menuicon"]+label .line:nth-last-child(1){
+			top:0;
+		}
+		header input[id="menuicon"]+label .line:nth-last-child(2){
+			top:50%;
+			transform: translateY(-50%);
+		}
+		header input[id="menuicon"]+label .line:nth-last-child(3){
+			bottom:0;
+		}
+
+
+		#menubar{
+			padding: 0;													 margin-left: 20px;
+			list-style-type: none;
+		}
+
+		#menubar li{
+			float: left;
+			margin: 0 10px;
+		}
+		#menubar li a{
+			display: block;
+			text-align: left;
+			
+		}

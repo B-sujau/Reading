@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+[class^="braile"]{
+		margin: 15% 0 0; width: 100%;}
+	.braile{height: 38%; background-image: url("../qiuz/jarumm.png");
+	background-size: cover;}
+	.braile1{height: 38%; background-image: url("../qiuz/jarumm jung.png");	background-size: cover;}
+	.braile2{height: 60%; background-image: url( "../qiuz/moumm.png");
+	background-size: cover;}
+	.braile4{height: 40%; background-image: url( "../qiuz/jarumm y.png");
+	background-size: cover;}
+	.braile5{height: 38%; background-image: url( "../qiuz/moumm y.png");
+	background-size: cover;}
+	.braile6{height: 52%; background-image: url( "../qiuz/y.png");
+	background-size: cover;}
+	
+	.piont, .explanation{font-family: "AppleSDGothicNeoL00"; float: left; text-align: left;}
+	.piont{font-size: 17px;}
+	.explanation{
+		margin-top: 10%;
+		width: 100%;
+		
+		font-size: 15px;
+	}
+	.small{font-size: 10px; text-align: left; color: #ECE6CE; }

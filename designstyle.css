@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clear{height: 10%; margin: auto;}
+.all{ height: 95%; padding: 0 7%; margin-bottom: 10%; 
+/*border: 1px solid #B0797A;*/}
+#en{font-size: 22px;}
+.say{font-size: 15px; margin-top: 10%;}
+
+
+body {
+        margin: 0;
+        padding: 0;
+    }
+		.box{
+			display: flex;
+			height: 15%;
+			margin: 5% 0;
+		}
+		.otbox{
+			display: flex;
+			height: 15%;
+			margin: 5% 0 15%;
+		}
+		h3{color: #F9AC66;}
+		#qq{background-image: url("qq.jpg");}
+		hr{background-color: #ECE6CE;}
+		#one{width: 35%; height: 100%;
+			background-image: url("tool/book.jpg"); background-size: cover;}
+		#two{width: 35%; height: 100%;
+			background-image: url("tool/pan.jpg"); background-size: cover;}
+		#three{width: 35%; height: 100%;
+			background-image: url("tool/tarjar.jpg"); background-size: cover;}
+		.space{font-size: 17px;
+				margin-left: 5%; margin-top: 5%;}
