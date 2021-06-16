@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>정독</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	
+<link rel="stylesheet" href="common.css">
+<link rel="stylesheet" href="sub.css">
+	
+<style>
+
+	@media (min-width:768px){
+		header input[id="menuicon"]+label{
+			margin-top: 2%;
+			margin-right: 8%;width: 30px;height: 25px;}
+		header input[id="menuicon"]+label .line{
+			width: 100%;height: 3px;}
+		ul li {line-height: 250%; font-size: 32px;}
+		.body{padding-left: 6%;}
+		
+		footer{font-size: 18px;}
+	}
+	
+	@media (min-width:1024px){
+		header input[id="menuicon"]+label{
+			margin-top: 3%;
+			margin-right: 8%;width: 40px; height: 35px;}
+		header input[id="menuicon"]+label .line{
+			width: 100%;height: 4px;}
+		ul li {line-height: 250%; font-size: 36px;}
+		.body{padding-left: 6%;}
+		
+		footer{font-size: 20px;}
+	}
+	
+</style>
+</head>
+<body>
+	<div class="front">
+		<div id="bar"></div>
+			<header>
+				<input type="checkbox" id="menuicon">
+				<label for="menuicon" onClick="history.go(-1)">
+					<span class="line"></span>
+					<span class="line"></span>
+					<span class="line"></span>
+				</label>
+			</header>
+	</div>
+	<div class="body">
+		<div class="text">
+			<ul>
+				<li> <a href="index.html">홈</a> </li>
+				<li> <a href="design.html">점자</a> </li>
+				<li> <a href="barile_.pdf" target="_blank" download>자세히</a> </li>
+			</ul>
+		</div>
+	</div>
+		
+	<footer>
+		<span>정독</span>
+	</footer>
+</body>
+</html>
