@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{ background-image: url("han.jpg"); margin: auto; color: white;
+	}
+	#bar{width: 100%; height: 44px; }
+	.swiper-container {
+		position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+		height: 100%;
+        text-align: center;
+        font-size: 18px;
+		 display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+			align-items: center;}
+	
+	#back{ width: 32px; height: 17px; background-size: cover;
+		background-image: url("arrow.png"); margin: 0 7%; }
+	.content{width: 75%; height: 90%;/*border: 1px solid #FF0004;*/}
+	.title{font-size: 22px; float: left; margin-left: 5%;}

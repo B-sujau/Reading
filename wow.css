@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+[class^="braile"]{
+		margin: 10% 0 0; width: 100%;}
+	.braile{height: 60%; background-image: url( "qiuz/aplar.png");
+	background-size: cover;}
+	.braile1{height: 17%; background-image: url( "qiuz/roma.png");
+	background-size: cover;}
+	.braile2{height: 60%; background-image: url( "qiuz/roma kiho.png");
+	background-size: cover;}
+	.braile3{height: 41%; background-image: url( "qiuz/sujar.png");
+	background-size: cover;}
+	.braile4{height: 90%; background-image: url( "qiuz/kiho.png");
+	background-size: cover;}
+	.braile5{height: 35%; background-image: url( "qiuz/sujar kiho.png");
+	background-size: cover;}
+	.piont, .explanation{font-family: "AppleSDGothicNeoL00"; float: left;}
+	.piont{font-size: 17px;}
+	.piont ol{padding: 0; font-size: 15px;}
+	.explanation{
+		margin-top: 10%;
+		width: 100%;
+		text-align: left;
+		font-size: 15px;
+	}
+	.small{font-size: 10px; text-align: left; color: #ECE6CE; }
