@@ -1,62 +1,59 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>정독</title>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	<meta charset="utf-8">
+	<title>정독</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
 
+	<!-- CSS -->
 	<link rel="stylesheet" href="common.css">
 	<link rel="stylesheet" href="main1.css">
 	<link rel="stylesheet" href="only/main3.css">
-	
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+
+	<!-- animate.min.CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 	<style>
+		
+		/* min-width = 360px */
 		@media (max-width:360px){
-			#btn{margin: 47% auto auto;}	}
-		
-		@media (min-width:768px){
+			#btn{margin: 47% auto auto;} }
 
-		header input[id="menuicon"]+label{width: 32px; height: 20px;}
-		header input[id="menuicon"]+label .line{
-					width: 100%;height: 3px;}
-		.front{font-size: 32px;}
-		#menubar{ margin: 20% 5% 0;}
-		#menubar li{margin: 0 2%; }
-		.swiper-slide {font-size: 18px;}
-		.substance{background-image: url("qiuz/bigq.png"); background-size: cover;}
-		#text{font-size: 25px;}
-		#btn{margin: 40% auto auto; width: 170px; height: 80px;
-			/*border: 1px solid #FF0105;*/
-			line-height: 60px; display: flex;}
-		.btn{background-color: #F9AC66; width: 100px; height: 70px; 	font-size: 25px;}
-		#text{ margin-top: 2%;}
-		
-		#logo2{width: 85px; height: 25px; margin: 0 0 0 50px;}
-		header input[id="menuicon"]+label{
-			margin-right: 8%;width: 28px;height: 19px;}
-		header input[id="menuicon"]+label .line{
-			width: 100%;height: 3px;}
-		}
-		
+		/* min-width = 768px */
+		@media (min-width:768px){
+			header input[id="menuicon"]+label{width: 32px; height: 20px;}
+			header input[id="menuicon"]+label .line{width: 100%;height: 3px;}
+			header input[id="menuicon"]+label{ margin-right: 8%;width: 28px;height: 19px;}
+			header input[id="menuicon"]+label .line{ width: 100%;height: 3px;}
+			
+			#menubar{ margin: 20% 5% 0;}
+			#menubar li{margin: 0 2%; }
+			#text{font-size: 25px; margin-top: 2%;}
+			#btn{margin: 40% auto auto; width: 170px; height: 80px;line-height: 60px;
+				 display: flex;}
+			#logo2{width: 85px; height: 25px; margin: 0 0 0 50px;}
+			
+			.front{font-size: 32px;}
+			.swiper-slide {font-size: 18px;}
+			.substance{background-image: url("qiuz/bigq.png"); background-size: cover;}
+			.btn{background-color: #F9AC66; width: 100px; height: 70px; font-size: 25px;}
+			
+								}
+
+		/* min-width = 768px */
 		@media (min-width:1024px){
-			.front{font-size: 38px;}
-			#logo2{width: 120px; height: 35px; margin: 0 0 0 70px;}
-			header input[id="menuicon"]+label{
-			margin-right: 8%; width: 35px;height: 25px;}
-			header input[id="menuicon"]+label .line{
-			width: 100%;height: 4px;}
-			#bar{height: 60px;}
+				header input[id="menuicon"]+label{ margin-right: 8%; width: 35px;height: 25px;}
+				header input[id="menuicon"]+label .line{ width: 100%;height: 4px;}
 			
-			
-			#text{font-size: 28px;}
-		}
+				#bar{height: 60px;}
+				#text{font-size: 28px;}
+				#logo2{width: 120px; height: 35px; margin: 0 0 0 70px;}
+				
+				.front{font-size: 38px;}
+				
+								}
 	</style>
 </head>
-
 <body style="overflow-y: hidden">
 	<div class="front">
 			<div id="bar"></div>
@@ -84,12 +81,9 @@
 				</div>
 				<div class="btn">작
 				</div>
-				
-				<!--<p> 시작</p>-->
 			</div>
 			<div id="text" class="animate__animated animate__fadeInUp  animate__slower">
 			퀴즈를 풀어보세요!!<br>
-				
 			</div>
 		</article>
 		

@@ -1,46 +1,54 @@
 @charset "utf-8";
-/* CSS Document */
 
- html, body {
-       /* position: relative; */
-        height: 100%;
-	 	font-family: "SF Pro Display";
-    }
-    body {
-        background: white;
-        font-family: SF Pro Display;  font-size: 15px;
-        color: black;
-        margin: 0;
-        padding: 0;
-    }
-		.front{
-			font-family: SF Pro Text; font-size: 17px;
-			position: absolute;
-			z-index: 2;
-			width: 100%;
-		}
-		#number{font-size: 12px;
-				color : #F9AC66;
-				float: left;
-				}
-		#bar{width: 100%;height: 44px;}
-		header{                                                          /* border: 1px solid  #F9FF00;*/ width: 100%;				height:20px;margin-bottom: 70px;}
-		.front #menubar li a:checked{color: #ED6B5B;}
+/*index*/
+.title{ font-size: 34px;}
+.explanation{ margin-top: 23px;font-size: 12px;}
 
-		header input[id="menuicon"]{
-			display: none;
-		}
-		header input[id="menuicon"]+label{
-			float: right;margin-right: 8%;display: block;width: 22px;height: 16px;
-			position: relative;
-			z-index: 3;
-		}
-		header input[id="menuicon"]+label .line{
-			display: block;
-			position: absolute;	width: 100%;height: 2px;
-		}
+/*index2*/
+#logo{width: 65px; height: 20px; float: left;  margin: -3px 0 0 25px; background-image: url("read.png"); background-size: cover;}
 
-		.swiper-slide { /* Center slide text vertically */
+
+/*all*/
+html, body { height: 100%; font-family: "SF Pro Display"; }
+body {
+  background: white;
+  font-family: SF Pro Display;  font-size: 15px;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+header{/* border: 1px solid  #F9FF00;*/ width: 100%; height:20px; margin-bottom: 70px;}
+
+header input[id="menuicon"]{display: none;	}
+header input[id="menuicon"]+label{float: right;margin-right: 8%;display: block;width: 																		  22px;height: 16px; position: relative; z-index: 3; }
+header input[id="menuicon"]+label .line{display: block; position: absolute;	width:100%; 																			height: 2px; }
+
+#bar{width: 100%;height: 44px;}
+#logo2{width: 65px; height: 20px; float: left;  margin: -3px 0 0 25px; background-image: url("read2.png");						   background-size: cover;}
+
+.front{
+	font-family: SF Pro Text; font-size: 17px;
+	position: absolute;
+	z-index: 2;
+	width: 100%;}
+
+.front #menubar li a:checked{color: #ED6B5B;}
+
+
+/*swiper*/
+.content{
+		clear: both;
+		position: absolute;
+		margin-bottom: 110px;
+		padding-left: 60px;
+		width: 100%;
+		/*border: 1px solid #B60003;*/
+		bottom: 0;
+		text-align: left;
+		color: white;
+}
+.swiper-slide { /* Center slide text vertically */
         display: -webkit-box;
         display: -ms-flexbox;
         display: -webkit-flex;
@@ -53,24 +61,13 @@
         -ms-flex-align: center;
         -webkit-align-items: center;
 			align-items: center;}
-
-		.content{
-			clear: both;
-			position: absolute;
-											margin-bottom: 110px;
-											padding-left: 60px;
-			width: 100%;
-			/*border: 1px solid #B60003;*/
-											bottom: 0;
-			text-align: left;
-			color: white;
-		}
-		.title{ font-size: 34px;}
-		.explanation{   margin-top: 23px;font-size: 12px;
-		}
-		#logo{
-			width: 65px; height: 20px; float: left;  margin: -3px 0 0 25px; background-image: url("read.png"); background-size: cover;
-		}
-		#logo2{
-			width: 65px; height: 20px; float: left;  margin: -3px 0 0 25px; background-image: url("read2.png"); background-size: cover;
-		}
+.swiper-container {
+	position: absolute;
+	z-index: 1;
+    width: 100%;
+    }
+.swiper-slide {
+	height: 100%;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;}

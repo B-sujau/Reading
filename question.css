@@ -2,13 +2,14 @@
 /* CSS Document */
 
 html,body{ width: 100%; height: 100%;}
-	body{background-image: url("qiuz.png"); background-size: cover; margin: auto;}
-	#bar{width: 100%;height: 44px;}
-	#back{ width: 32px; height: 17px;
+body{background-image: url("qiuz.png"); background-size: cover; margin: auto;}
+
+/*id*/
+#bar{width: 100%;height: 44px;}
+#back{ width: 32px; height: 17px;
 		background-image: url("arrow.png"); margin: 3% 10% 5%; background-size: cover;}
-	#all{width: 100%; height: 86%;}
-	
-	#question {
+#all{width: 100%; height: 86%;}
+#question {
    padding: 10px;
 	margin: auto;
 	width: 80%;
@@ -16,35 +17,34 @@ html,body{ width: 100%; height: 100%;}
    border-radius: 15px;
    font-size: 20px;
    color: #fff;
-	}
+}
+#quiz {
+   text-align: center;
+	margin-top: 35%;
+}
+#progress {
+	margin-top: 20%;
+	font-size: 12px;
+	color: white;
+}
 
-	#quiz {
-	   text-align: center;
-		margin-top: 35%;
-	}
 
-	#progress {
-		margin-top: 20%;
-	   font-size: 12px;
-	   color: white;
-	}
-
-	.buttons {
-		margin: 50px auto 0;
-		padding: auto;
-		/*border: 1px solid #ffe3ed;*/
-	}
-
-	.btn {
-	   margin: 5px 40px 5px 40px;
-	   padding: 10px;
-	   width: 300px;
-		height: 60px;
-	   font-size: 16px;
-	   color: white;
-	   border: 1px solid #FFFFFF;
-	   border-radius: 20px;
-	   background-color: Transparent;
-	   /*cursor: pointer;*/
-	   transition: all .2s;
-	}
+/*class*/
+.buttons {
+	margin: 50px auto 0;
+	padding: auto;
+	/*border: 1px solid #ffe3ed;*/
+}
+.btn {
+	margin: 5px 40px 5px 40px;
+	padding: 10px;
+	width: 300px;
+	height: 60px;
+	font-size: 16px;
+	color: white;
+	border: 1px solid #FFFFFF;
+	border-radius: 20px;
+	background-color: Transparent;
+	/*cursor: pointer;*/
+	transition: all .2s;
+}

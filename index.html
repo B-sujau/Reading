@@ -7,51 +7,46 @@
 	
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="swiper.min.css">
+	
+	<!-- CSS -->
 	<link rel="stylesheet" href="common.css">
 	<link rel="stylesheet" href="main1.css">
 	<link rel="stylesheet" href="only/main.css">
 	
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+	<!-- animate.min.CSS -->
+	<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	
     <style>
-		@media (min-width:768px){
-	#logo2{width: 85px; height: 25px; margin: 0 0 0 50px;}
-	header input[id="menuicon"]+label{width: 32px; height: 20px;}
-		header input[id="menuicon"]+label .line{
-					width: 100%;height: 3px;}
-		.front{font-size: 32px;}
-		#menubar{ margin: 20% 5% 0;}
-		#menubar li{margin: 0 2%;}
-		.swiper-slide {font-size: 18px;}
-		.title{font-size:48px; position: absolute; margin-top: -8%;}
-		.explanation{font-size:25px; position: absolute; margin-top: -2%; }
-		.content{margin-bottom: 160px; padding-left: 200px;}
+		/* min-width = 768px */
+		@media (min-width:768px){	
+			header input[id="menuicon"]+label{width: 32px; height: 20px; }
+			header input[id="menuicon"]+label .line{ width: 100%;height: 3px; }
 			
+			#logo2{width: 85px; height: 25px; margin: 0 0 0 50px; }
+			#menubar{ margin: 20% 5% 0;}
+			#menubar li{margin: 0 2%;}
+			#braille{ background-image: url("media/Mabout_braille.png"); }
+			#history{ background-image: url("media/Mabout_history.png"); }
+			#park{ background-image: url("media/Mabout_han.png"); }
 			
-		#braille{
-			background-image: url("media/Mabout_braille.png");
-		}
-		#history{
-			background-image: url("media/Mabout_history.png");
-		}
-		#park{
-			background-image: url("media/Mabout_han.png");
-		}
-		}
+			.front{font-size: 32px;}
+			.swiper-slide {font-size: 18px;}
+			.title{font-size:48px; position: absolute; margin-top: -8%;}
+			.explanation{font-size:25px; position: absolute; margin-top: -2%; }
+			.content{margin-bottom: 160px; padding-left: 200px;}
+								}
 		
+		/* min-width = 1024px */
 		@media (min-width:1024px){
-			.front{font-size: 38px;}
+			header input[id="menuicon"]+label{ margin-right: 8%; width: 35px;height: 25px;}
+			header input[id="menuicon"]+label .line{ width: 100%;height: 4px;}
+			
 			#logo2{width: 120px; height: 35px; margin: 0 0 0 70px;}
-			header input[id="menuicon"]+label{
-			margin-right: 8%; width: 35px;height: 25px;}
-			header input[id="menuicon"]+label .line{
-			width: 100%;height: 4px;}
 			#bar{height: 60px;}
 			
-		}
+			.front{font-size: 38px;}
+								 }
     </style>
 </head>
 <body>
@@ -100,17 +95,14 @@
 			</div>
         </div>
 	</div>
-	<script>
-	
-	</script>
 </body>
 	
-    <script src="swiper.min.js"></script>
-    <script>
+<!-- Link Swiper's js -->
+  <script src="swiper.min.js"></script>
+  <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        direction: 'vertical'
-    });
-    </script>
+        direction: 'vertical'    });
+  </script>
 </html>

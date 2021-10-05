@@ -1,42 +1,44 @@
 @charset "utf-8";
-/* CSS Document */
 
 body{ font-family: SF Pro text Semibold;}
 header input[id="menuicon"]+label .line {background-color: black;}
-	.front{ position: absolute;}
-	.body{
-		height: 87%;
-		position: relative;}
-#back{ width: 32px; height: 17px; float: left;
-		background-image: url("arrow2.png"); margin: 0 7%;
-		background-size: cover;}
-	.text{
-		position: absolute;
-		bottom: 15%;}
-	
-	footer{ 
-		height: 10%;
-		background-color: #404352;
-		color: #99A2B8;
-		font-size: 13px;
-		padding-top: 20px;
-		}
-	footer span{ margin:20px; }
-
-	header input[id="menuicon"]+label .line:nth-last-child(1){
+header input[id="menuicon"]+label .line:nth-last-child(1){
 			top:50;
 			transform: translateY(-20%) rotate(45deg);
-		}
-		header input[id="menuicon"]+label .line:nth-last-child(2){
+}
+header input[id="menuicon"]+label .line:nth-last-child(2){
 			opacity: 0;
-		}
-		header input[id="menuicon"]+label .line:nth-last-child(3){
+}
+header input[id="menuicon"]+label .line:nth-last-child(3){
 			bottom:50;
 			transform: translateY(30%) rotate(-45deg);
-		}
+}
+footer span{ margin:20px; }
+
+.front{ position: absolute;}
+
+
+/*menu*/
+footer{ 
+	height: 10%;
+	background-color: #404352;
+	color: #99A2B8;
+	font-size: 13px;
+	padding-top: 20px;
+}
+
 ul{list-style:none;}
 ul li {line-height: 220%; font-size: 22px;}
+ul li :active {color: #ED6B5B;}
+
+.body{
+	height: 87%;
+	position: relative;}
+.text{
+	position: absolute;
+	bottom: 15%;}
 .text a{
 	text-decoration: none;
 	color: black;}
-ul li :active {color: #ED6B5B;}
+
+

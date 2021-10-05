@@ -7,47 +7,48 @@
 	
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="swiper.min.css">
+	
+	<!-- CSS -->
 	<link rel="stylesheet" href="common.css">
 	<link rel="stylesheet" href="main1.css">
 	<link rel="stylesheet" href="only/main2.css">
 	
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+	<!-- animate.min.CSS -->
+	<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Demo styles -->
     <style>
+		/* min-width = 768px */
 		@media (min-width:768px){
-		
-		#logo{width: 85px; height: 25px; margin: 0 0 0 50px;}
-		header input[id="menuicon"]+label{width: 32px; height: 20px;}
-		header input[id="menuicon"]+label .line{
-					width: 100%;height: 3px;}
-		.front{font-size: 32px;}
-		#menubar{ margin: 20% 5% 0;}
-		#menubar li{margin: 0 2%; }
-		.swiper-slide {font-size: 18px;}
-		.title{font-size:48px;  position: absolute; margin-top: -8%;}
-		.explanation{font-size:25px; position: absolute; margin-top: -2%; }
-		.content{margin-bottom: 160px; padding-left: 200px;}
+			header input[id="menuicon"]+label{width: 32px; height: 20px;}
+			header input[id="menuicon"]+label .line{width: 100%;height: 3px;}
 			
-		.swiper-container {height: 70%;}
-		#space{height: 30%;}
-		#han{background-image: url("only/Mstudy_1.png");}
-		#en{background-image: url("only/Mstudy_2.png");}
-		#code{background-image: url("only/Mstudy_3.png");}
-		}
+			#logo{width: 85px; height: 25px; margin: 0 0 0 50px;}
+			#menubar{ margin: 20% 5% 0;}
+			#menubar li{margin: 0 2%; }
+			#space{height: 30%;}
+			#han{background-image: url("only/Mstudy_1.png");}
+			#en{background-image: url("only/Mstudy_2.png");}
+			#code{background-image: url("only/Mstudy_3.png");}
+			
+			.front{font-size: 32px;}
+			.swiper-slide {font-size: 18px;}
+			.title{font-size:48px;  position: absolute; margin-top: -8%;}
+			.explanation{font-size:25px; position: absolute; margin-top: -2%; }
+			.content{margin-bottom: 160px; padding-left: 200px;}
+			.swiper-container {height: 70%;}
+								}
+		
+		/* min-width = 1024px */
 		@media (min-width:1024px){
-			.front{font-size: 38px;}
+			header input[id="menuicon"]+label{ margin-right: 8%; width: 35px;height: 25px;}
+			header input[id="menuicon"]+label .line{ width: 100%;height: 4px;}
+			
 			#logo{width: 120px; height: 35px; margin: 0 0 0 70px;}
-			header input[id="menuicon"]+label{
-			margin-right: 8%; width: 35px;height: 25px;}
-			header input[id="menuicon"]+label .line{
-			width: 100%;height: 4px;}
 			#bar{height: 60px;}
 			
-		}
+			.front{font-size: 38px;}
+								 }
     </style>
 </head>
 <body>  
@@ -69,35 +70,36 @@
 			</ul>
 	</div>
 	
-	
 	<div id="space"></div>
-<div class="swiper-container">
-        <div class="swiper-wrapper">
-<div class="swiper-slide" id="han" onClick="location.href='study1.html'" >
-  <div class="content animate__animated animate__fadeInUp animate__slower">
-		  <span class="title">한글 점자</span>
-					</div>
+	<div class="swiper-container">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide" id="han" onClick="location.href='study1.html'" >
+				<div class="content animate__animated animate__fadeInUp animate__slower">
+				  <span class="title">한글 점자</span>
+				</div>
 			</div>
-            <div class="swiper-slide" id="en" onClick="location.href='study2.html'">
+
+			<div class="swiper-slide" id="en" onClick="location.href='study2.html'">
 				<div class="content animate__animated animate__fadeInUp animate__delay-2s animate__slower">
 					<span class="title">로마자/ 숫자</span>
 				</div>
 			</div>
-            <div class="swiper-slide" id="code" onClick="location.href='study3.html'">
+			
+			<div class="swiper-slide" id="code" onClick="location.href='study3.html'">
 				<div class="content animate__animated animate__fadeInUpanimate__delay-5s animate__slower">
 					<span class="title">문장 부호</span>
 				</div>
 			</div>
-        </div>
+		</div>
 	</div>
 </body>
 	
+	<!-- Link Swiper's js -->
     <script src="swiper.min.js"></script>
     <script>
     var swiper = new Swiper('.swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
-        direction: 'vertical'
-    });
+        direction: 'vertical'   });
     </script>
 </html>

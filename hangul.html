@@ -1,71 +1,72 @@
 <!doctype html>
-<html><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
-<link rel="stylesheet" href="header.css">
-<link rel="stylesheet" href="demo.css">
-<link rel="stylesheet" href="only/hangul.css">
+<html>
+<head>
+	<title>Braile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
 	
-<!--fancybox files -->
+	<!-- CSS -->
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="demo.css">
+	<link rel="stylesheet" href="only/hangul.css">
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<!--fancybox files -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	
+	<!--AOS-->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<link rel="stylesheet" href="swiper.min.css">
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-	
-<!--AOS-->
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="swiper.min.css">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-	
-<title>Braile</title>
-<style>
-	/*about indside*/
-@media(min-width:768px){
-	.con{font-size: 25px;}
-	.title{font-size: 48px;}
-	.bb{font-size: 35px;}
-	.line{height: 20px;}
-	header input[id="menuicon"]+label .line{
-		background-color: white;}
-	#back{background-image: url("arrow.png"); width: 38px; height: 23px;}
-	#num2{height: 150px;}
-	header input[id="menuicon"]+label{width: 32px; height: 20px;}
-		header input[id="menuicon"]+label .line{
-					width: 100%;height: 3px;}
-	.image{background-image: url("hanggul/Mhanback.png");}
-	#poto{width: 95%; height: 230px;}
-	#poto2{width: 80%; height: 720px;}
-	#say{font-size: 25px;}
-	.swiper-container {width: 90%; height:320px;}
-    .swiper-slide { width: 30px;height: 100%;}
-	#line{width: 100px; height: 7px;}
-	footer{font-size: 15px;}
-}
-	@media(min-width: 1024px){
-		.con{font-size: 28px;}
-		.title{margin-top: 7%;}
-		#poto{width: 95%; height: 300px;}
-		#poto2{width: 70%; height: 880px;}
-		#say{font-size: 35px;}
-		.swiper-container {width: 90%; height:400px;}
-		.swiper-slide { width: 20px;height: 100%;}
-		
-		
-		header input[id="menuicon"]+label{
-			margin-right: 8%; width: 35px;height: 25px;}
-			header input[id="menuicon"]+label .line{
-			width: 100%;height: 4px;}
-		#bar{height: 60px;}
-		#back{width: 44px; height: 27px;}
-	}
-</style>
+	<!-- animate.min.CSS -->
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+	  />
 
+	<style>
+		/*768*/
+		@media(min-width:768px){
+			header input[id="menuicon"]+label .line{ background-color: white;}
+			header input[id="menuicon"]+label{width: 32px; height: 20px;}
+			header input[id="menuicon"]+label .line{ width: 100%;height: 3px;}
+			footer{font-size: 15px;}
+			
+			#back{background-image: url("arrow.png"); width: 38px; height: 23px;}
+			#num2{height: 150px;}
+			#poto{width: 95%; height: 230px;}
+			#poto2{width: 80%; height: 720px;}
+			#say{font-size: 25px;}
+			#line{width: 100px; height: 7px;}
+			
+			.con{font-size: 25px;}
+			.title{font-size: 48px;}
+			.bb{font-size: 35px;}
+			.line{height: 20px;}
+			.image{background-image: url("hanggul/Mhanback.png");}
+			.swiper-container {width: 90%; height:320px;}
+			.swiper-slide { width: 30px;height: 100%;}			
+								}
+		/*1024*/
+		@media(min-width: 1024px){
+			header input[id="menuicon"]+label{margin-right: 8%; width: 35px;height: 25px;}
+			header input[id="menuicon"]+label .line{width: 100%;height: 4px;}
+			
+			#poto{width: 95%; height: 300px;}
+			#poto2{width: 70%; height: 880px;}
+			#say{font-size: 35px;}
+			#bar{height: 60px;}
+			#back{width: 44px; height: 27px;}
+			
+			
+			.con{font-size: 28px;}
+			.title{margin-top: 7%;}
+			.swiper-container {width: 90%; height:400px;}
+			.swiper-slide { width: 20px;height: 100%;}
+								}
+	</style>
 </head>
 <body style="overflow-x:hidden">
 	<div class="image">
@@ -146,53 +147,52 @@
 		<div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="swiper-slide">
-				<a data-fancybox="gallery" href="hanggul/book1.png"><img src="hanggul/book1.png" width="100%" height="100%">
+				<a data-fancybox="gallery" href="hanggul/book1.png"><img src="hanggul/book1.png" alt="book1" width="100%" height="100%">
 				</a>
 			</div>
             <div class="swiper-slide">
-				<a data-fancybox="gallery" href="hanggul/book2.png"><img src="hanggul/book2.png" width="100%" height="100%">
+				<a data-fancybox="gallery" href="hanggul/book2.png"><img src="hanggul/book2.png" alt="book2" width="100%" height="100%">
 				</a>
 			</div>
             <div class="swiper-slide">
-				<a data-fancybox="gallery" href="hanggul/book3.png"><img src="hanggul/book3.png" width="100%" height="100%">
+				<a data-fancybox="gallery" href="hanggul/book3.png"><img src="hanggul/book3.png" alt="book4" width="100%" height="100%">
 				</a>
 			</div>
             <div class="swiper-slide">
-				<a data-fancybox="gallery" href="hanggul/book5.png"><img src="hanggul/book5.png" width="100%" height="100%">
+				<a data-fancybox="gallery" href="hanggul/book5.png"><img src="hanggul/book5.png" alt="book5" width="100%" height="100%">
 				</a>
 			</div>
             <div class="swiper-slide">
-				<a data-fancybox="gallery" href="hanggul/book6.png"><img src="hanggul/book6.png" width="100%" height="100%">
+				<a data-fancybox="gallery" href="hanggul/book6.png"><img src="hanggul/book6.png" alt="book6" width="100%" height="100%">
 				</a>
 			</div>
 			<div class="swiper-slide">
-				<a data-fancybox="gallery" href="hanggul/book7.png"><img src="hanggul/book7.png" width="100%" height="100%">
+				<a data-fancybox="gallery" href="hanggul/book7.png"><img src="hanggul/book7.png" alt="book7" width="100%" height="100%">
 				</a>
 			</div>
 			<div class="swiper-slide">
-				<a data-fancybox="gallery" href="hanggul/book8.png"><img src="hanggul/book8.png" width="100%" height="100%">
+				<a data-fancybox="gallery" href="hanggul/book8.png"><img src="hanggul/book8.png" alt="book8" width="100%" height="100%">
 				</a>
 			</div>
         </div>
     	</div>
 		<footer>
 			출처: 한국민족문화대백과사전, SBS news,네이버 지식백과, 점자 세상
-		</footer>
+		</footer><br>
 	</div>
 	
 	
-		 <!-- Swiper JS -->
+	 <!-- Swiper JS -->
     <script src="swiper.min.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 2,
-        spaceBetween: 20
-    });
+		var swiper = new Swiper('.swiper-container', {
+			slidesPerView: 2,
+			spaceBetween: 20 });
     </script>
 	<script>
-  AOS.init();
-</script>
+  		AOS.init();
+	</script>
 </body>
 </html>

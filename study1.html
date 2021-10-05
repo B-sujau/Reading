@@ -1,42 +1,50 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
-<title>정독</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+	<title>정독</title>
 	
-<link rel="stylesheet" href="swiper.min.css">
-<link rel="stylesheet" href="text.css">
-<link rel="stylesheet" href="only/here.css">
+	<!--swiper.css-->
+	<link rel="stylesheet" href="swiper.min.css">
 	
-<style>
-	@media (min-width:768px){
-	body{ background-image: url("only/Mhan.png"); background-size: cover;}
-	.title{font-size: 35px;}
-	.piont{font-size: 26px;}
-	.explanation{font-size: 22px; margin-top: -5%;}
-	.small{font-size: 16px;}
-		
-	#back{width: 38px; height: 23px;}
-	[class^="braile"]{width: 75%; margin: 10% 0 0 15%;}
-	.braile{height: 45%;}
-	.braile1{height: 45%;}
-	.braile2{height: 58%;}
-	.braile4{height: 50%;}
-	.braile5{height: 45%;}
-	.braile6{height: 65%;}
-	.explanation{margin-top: 5%;}
-	}
-	
-	@media (min-width:1024px){
-		#back{width: 44px; height: 27px;}
-	.piont{font-size: 32px;}
-	.explanation{font-size: 28px;}
-	.small{font-size: 20px;}
-	}
-</style>
-</head>
+	<!--css-->
+	<link rel="stylesheet" href="text.css">
+	<link rel="stylesheet" href="only/here.css">
 
+	<style>
+		/*768*/
+		@media (min-width:768px){
+		body{ background-image: url("only/Mhan.png");}
+		
+		[class^="braile"]{width: 100%; margin: 10% 0 0; }
+		
+		#back{width: 38px; height: 23px;}
+			
+		.title{font-size: 35px;}
+		.piont{font-size: 26px;}
+		.explanation{font-size: 22px; margin-top: -5%;}
+		.small{font-size: 16px;}
+		.braile{height: 45%;}
+		.braile1{height: 45%;}
+		.braile2{height: 58%;}
+		.braile4{height: 50%;}
+		.braile5{height: 45%;}
+		.braile6{height: 65%;}
+		.explanation{margin-top: 5%;}
+								}
+		
+		/*1024*/
+		@media (min-width:1024px){
+			#back{width: 44px; height: 27px;}
+			
+			.piont{font-size: 32px;}
+			.explanation{font-size: 28px;}
+			.small{font-size: 20px;}
+								  }
+		
+	</style>
+</head>
 <body>
 	<div id="bar"></div>
 		<div id="back" onClick="location.href='index2.html'"></div>
@@ -60,6 +68,7 @@
 							</span>
 						</div>
 				</div>
+				
 				<div class="swiper-slide">
 					<div class="content">
 						<div class="braile1">
@@ -101,6 +110,7 @@
 						</span>
 					</div>
 				</div>
+				
 				<div class="swiper-slide">
 					<div class="content">
 						<span class="explanation">
@@ -123,71 +133,79 @@
 						</span>
 					</div>
 				</div>
+				
 				<div class="swiper-slide">
 					<div class="content">
 
 						<span class="title">약자</span><br>
 						<div class="braile4">
 								
-							</div>
+						</div>
 						<span class="explanation">
-							총 26개의 약자가 포함되어있는 단어에는
-  반드시 약자로 표기한다.<br><br>
+							총 26개의 약자가 포함되어있는 단어에는 반드시 약자로 표기한다.<br><br>
 
-							<span class="piont">자음</span><br>
+						<span class="piont">자음</span><br>
 							<ul style="list-style: none; padding: 0; margin-top: 5%;">
-							<li>나,다,마,바,자,카,타,파,하 : ㅏ 생략</li>
-							<li>가 : ㄱ(4점)과 ㅏ(1-2-6점)을 합하여 
-								  '1-2-4-6점'으로 표기한다.</li>
-							<li>사 : 1-2-3점</li>
-							<li>라, 차 : 정자로 표기한다.
-           (라는 ㅏ를 생략하면 쉼표점형과 동일)</li>
-								</ul>
-						</span>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="content">
-						<div class="braile5">
-								
-							</div>
-						<span class="explanation">
-							<span class="piont">모음</span><br>
-							<ul style="list-style: none; padding: 0; margin-top: 5%;">
-							<li>곁받침이 있는 단어 : 약자 + 나머지 받침</li>
-							<li>약자와 다른 자음자가 함께 쓰이는 경우 : 약자
-							'ㅏ'생략 예외 : 팠/폐</li>
-							<li>까,싸,껏의 표기 : 가,사,것의 약자 표기 앞에 
-													 된소리표 6점을 덧붙여 표기</li>
-							<li>성,썽,정,쩡,청 : ㅅ,ㅆ,ㅈ,ㅉ,ㅊ 다음에 '영'의 약자 표기
-												   (ㅇ 생략) 약자 표기)</li>
+								<li>나,다,마,바,자,카,타,파,하 : ㅏ 생략</li>
+								<li>가 : ㄱ(4점)과 ㅏ(1-2-6점)을 합하여 
+									  '1-2-4-6점'으로 표기한다.</li>
+								<li>사 : 1-2-3점</li>
+								<li>라, 차 : 정자로 표기한다. (라는 ㅏ를 생략하면 쉼표점형과 동일)</li>
 							</ul>
 						</span>
 					</div>
 				</div>
+				
+				<div class="swiper-slide">
+					<div class="content">
+						<div class="braile5">
+								
+						</div>
+						<span class="explanation">
+							<span class="piont">모음</span><br>
+							<ul style="list-style: none; padding: 0; margin-top: 5%;">
+								<li>곁받침이 있는 단어 : 약자 + 나머지 받침
+								</li>
+								<li>약자와 다른 자음자가 함께 쓰이는 경우 : 약자
+								'ㅏ'생략 예외 : 팠/폐
+								</li>
+								<li>까,싸,껏의 표기 : 가,사,것의 약자 표기 앞에 된소리표 6점을 덧붙여 표기
+								</li>
+								<li>성,썽,정,쩡,청 : ㅅ,ㅆ,ㅈ,ㅉ,ㅊ 다음에 '영'의 약자 표기
+													   (ㅇ 생략) 약자 표기)
+								</li>
+							</ul>
+						</span>
+					</div>
+				</div>
+				
 				<div class="swiper-slide">
 					<div class="content">
 						<span class="title">약어</span><br>
 						<div class="braile6">
 								
-							</div>
+						</div>
 						<span class="explanation">
 							<ul style="list-style: none; padding: 0; margin-top: 5%;">
-							<li>1) 약어 앞에 다른 음절이 붙어 쓰이는 경우 : 약어 사용X</li>
-							<li>2)약어 뒤에 다른 음절이 붙어 쓰이는 경우 : 약어 사용</li>
+								<li>1) 약어 앞에 다른 음절이 붙어 쓰이는 경우 : 약어 사용X</li>
+								<li>2)약어 뒤에 다른 음절이 붙어 쓰이는 경우 : 약어 사용</li>
 							</ul>
 						</span>
 					</div>
 				</div>
+				
+				
 			</div>
 		</div>
 </body>
+	
+	<!--swiper.js-->
 	<script src="swiper.min.js"></script>
     <script>
-    var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        direction: 'vertical'
-    });
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			direction: 'vertical'
+		});
     </script>
 </html>

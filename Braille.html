@@ -1,75 +1,78 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
-<link rel="stylesheet" href="only/braile.css">
-<link rel="stylesheet" href="header.css">
- <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-	
-	
-<!--fancybox files -->
+	<title>Braile</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<!-- CSS -->
+	<link rel="stylesheet" href="only/braile.css">
+	<link rel="stylesheet" href="header.css">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<!-- animate.min.CSS -->
+	 <link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+	<!--fancybox files -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js">
+	</script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	
-<!--AOS-->
+	<!--AOS-->
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<!-- I used a animate.com too ~ -->
-	
-<title>Braile</title>
-<style>	
-/*about indside*/
-@media(min-width:768px){
-	.con{font-size: 25px;}
-	.title{font-size: 48px;}
-	.bb{font-size: 35px;}
-	.line{height: 20px;}
-	header input[id="menuicon"]+label .line{
-		background-color: white;}
-	#back{background-image: url("arrow.png"); width: 38px; height: 23px;}
-	#num2{height: 150px;}
-	header input[id="menuicon"]+label{width: 32px; height: 20px;}
-		header input[id="menuicon"]+label .line{
-					width: 100%;height: 3px;}
-	#line{width: 100px; height: 7px;}
-	
-}
-/*768*/
-@media(min-width: 768px){
-	.image{background-image: url("name/Mbackk.png"); background-size: cover;}
-	#next{font-size: 15px;}
-	#poto{width: 40%; height: 300px; margin: 5% 5% 13% 0;}
-	#num3{height: 150px;}
-	#poto2{height: 260px;}
-	#num5{height: 150px;}
-	#num6{height: 150px;}
-	#num7{height: 150px;}
 
-}
-/*1024*/
-	@media (min-width:1024px){
-		.con{font-size: 28px;}
-		#poto{width: 40%; height: 450px; margin: 5% 5% 13% 0;}
-		#num2{height: 195px;}
-		#num3{height: 195px;}
-		#poto2{height: 350px;}
-		#num5{height: 195px;}
-		#num6{height: 195px;}
-		#num7{height: 195px;}
+	
+	<style>	
 		
-		header input[id="menuicon"]+label{
-			margin-right: 8%; width: 35px;height: 25px;}
-			header input[id="menuicon"]+label .line{
-			width: 100%;height: 4px;}
-		#bar{height: 60px;}
-		#back{width: 44px; height: 27px;}
-	}
-</style>
+		/*about indside*/
+		@media(min-width:768px){
+			header input[id="menuicon"]+label .line{ background-color: white;}
+			header input[id="menuicon"]+label{width: 32px; height: 20px;}
+				header input[id="menuicon"]+label .line{ width: 100%;height: 3px;}
 
+			#back{background-image: url("arrow.png"); width: 38px; height: 23px;}
+			#num2{height: 150px;}
+			#line{width: 100px; height: 7px;}
+
+			.con{font-size: 25px;}
+			.title{font-size: 48px;}
+			.bb{font-size: 35px;}
+			.line{height: 20px;}
+								}
+
+		/*768*/
+		@media(min-width: 768px){
+			#next{font-size: 15px;}
+			#poto{width: 40%; height: 300px; margin: 5% 5% 13% 0;}
+			#num3{height: 150px;}
+			#poto2{height: 260px;}
+			#num5{height: 150px;}
+			#num6{height: 150px;}
+			#num7{height: 150px;}
+			
+			.image{background-image: url("name/Mbackk.png"); background-size: cover;}
+								}
+		
+		/*1024*/
+		@media (min-width:1024px){
+			header input[id="menuicon"]+label{ margin-right: 8%; width: 35px;height: 25px;}
+					header input[id="menuicon"]+label .line{ width: 100%;height: 4px;}
+			
+			#poto{width: 40%; height: 450px; margin: 5% 5% 13% 0;}
+			#num2{height: 195px;}
+			#num3{height: 195px;}				
+			#poto2{height: 350px;}
+			#num5{height: 195px;}
+			#num6{height: 195px;}
+			#num7{height: 195px;}
+			#bar{height: 60px;}
+			#back{width: 44px; height: 27px;}
+			
+			.con{font-size: 28px;}
+								}
+	</style>
 </head>
 <body>
 	<div class="image">
@@ -154,8 +157,9 @@
 			</div>
 		</a>
 	</div>
+	
 	<script>
-  AOS.init();
-</script>
+		AOS.init();
+	</script>
 </body>
 </html>
