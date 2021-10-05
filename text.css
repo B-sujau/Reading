@@ -11,7 +11,7 @@ body{ background-image: url("han.jpg"); background-size: cover; margin: auto; co
 #back{ width: 32px; height: 17px; background-size: cover;
 	background-image: url("arrow.png"); margin: 0 7% 0 ; }
 
-.content{width: 80%; height: 80%; margin-top:-20%;}
+.content{width: 80%; height: 80%;}
 .title{font-size: 22px; float: left; margin-left: 5%;}
 
 
