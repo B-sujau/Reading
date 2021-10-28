@@ -3,17 +3,17 @@
 
 [class^="braile"]{
 		margin: 15% 0 0; width: 100%;}
-	.braile{height: 45%; background-image: url("../qiuz/jarumm.png");
-	background-size: cover;}
-	.braile1{height: 38%; background-image: url("../qiuz/jarumm jung.png");	background-size: cover;}
+	.braile{height: 38%; background-image: url("../qiuz/jarumm.png");
+	background-size: contain; background-position: center;}
+	.braile1{height: 38%; background-image: url("../qiuz/jarumm jung.png");	background-size: contain; background-position: center;}
 	.braile2{height: 60%; background-image: url( "../qiuz/moumm.png");
-	background-size: cover;}
+	background-size: contain; background-position: center;}
 	.braile4{height: 40%; background-image: url( "../qiuz/jarumm y.png");
-	background-size: cover;}
+	background-size: contain; background-position: center;}
 	.braile5{height: 38%; background-image: url( "../qiuz/moumm y.png");
-	background-size: cover;}
+	background-size: contain; background-position: center;}
 	.braile6{height: 52%; background-image: url( "../qiuz/y.png");
-	background-size: cover;}
+	background-size: contain; background-position: center;}
 	
 	.piont, .explanation{font-family: "AppleSDGothicNeoL00"; float: left; text-align: left;}
 	.piont{font-size: 17px;}
