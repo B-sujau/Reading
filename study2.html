@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+	<title>정독</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=medium-dpi">
+
+	<!--swiper.css-->
+	<link rel="stylesheet" href="swiper.min.css">
+	
+	<!--css-->
+	<link rel="stylesheet" href="text.css">
+	<link rel="stylesheet" href="wow.css">
+
+	<style>
+		/* min-width = 320px */
+		@media (max-width:320px){
+			.explanation{font-size: 12px;}
+			.braile1{margin: 0;}
+								}
+		
+		/*768*/
+		@media (min-width:768px){
+			body{ background-image: url("only/Mhan.png"); background-size: cover;}
+			
+			[class^="braile"]{width: 68%; margin: 10% 0 0 15%;}
+			
+			.title{font-size: 35px;}
+			.piont{font-size: 26px;}
+			.explanation{font-size: 22px;}
+			.small{font-size: 15px;}
+			.braile{height: 65%;}
+			.braile1{height: 15%;}
+			.braile2{height: 60%;}
+			.braile3{height: 40%;}
+							  	}
+		
+		/*1024*/
+		@media (min-width:1024px){
+			#back{width: 44px; height: 27px;}
+			
+			.piont{font-size: 32px;}
+			.explanation{font-size: 28px;}
+			.small{font-size: 20px;}
+								}
+		
+	</style>
+</head>
+<body>
+	<div id="bar"></div>
+		<div id="back" onClick="location.href='index2.html'"></div>
+		 <div class="swiper-container">
+			<div class="swiper-wrapper">
+				
+				<div class="swiper-slide">
+						<div class="content">
+							<span class="title">로마</span>
+							<div class="braile">
+								
+							</div>
+							<span class="explanation">
+								기본으로 아래의 10개의 알파벳(a, b, c, d, e, f, g, h, i, j)이 1-4점과
+								2-5점을 사용하여 만들어 졌다.<br><br>
+
+								k,l,m,n,o,p,q,r,s,t는 기본형 a~e에 3점을 
+								u,v,x,y,z 는 a~e에 3-6점을 추가하여 표시한다.<br>
+								<span class="small">* w는 과거 영어 점자를 창안했을 시 없었던 문자였기에 
+								후에 추가되면서 따로 만들어진다.
+								</span>
+							</span>
+						</div>
+				</div>
+				
+				<div class="swiper-slide">
+						<div class="content">
+							<div class="braile1"></div>
+							<span class="explanation">
+							<span class="piont">대문자</span><br><br>
+								 <ul style="list-style: none; padding: 0; margin-top: 5%;">
+									<li>1. 대문자 글자표 : 하나의 글자가 대문자일 경우 해당 단어 앞에 6점을 표기</li>
+
+									<li>2. 대문자 단어표 : 2개 이상의 글자가 연속해서 대문자일 경우 대문자로  표기된 글자 앞에 6점, 6점을 표기</li>
+									<span class="small">*빈칸을 만나면 대문자 단어표의 효력이 사라진다.</span>
+
+									<li>3. 대문자 구절표 : 3개 이상의 연속된 단어가 모두 대문자일 경우 해당 단어 앞에 6점,6점,6점을 표기</li>
+
+									<li>4. 대문자 종료표 : 대문자 구정 끝에 대문자 종료표를 표기 대문자 표기가 단어 중간에서 끝날 때에도 사용한다. </li>
+									<span class="small">* 대문자 종료표 다음에 로마자 종료표가 올때에는 대문자 종료표를 표기하지 않는다.</span> <br><br>
+
+									<li class="piont">로마자 종료표를 적지 않는 상황<br><br>
+										<ol>1) 로마자와 한글 사이에 문장 부호가 올 때</ol>
+										<ol>2) 로마자가 따옴표나 괄호 따위로 묶일 때</ol>
+										<ol>3) 로마자와 숫자가 이어나올때</ol>
+									</li>
+									</ul>
+							</span>
+						</div>
+				</div>
+				
+				<div class="swiper-slide">
+						<div class="content">
+							<span class="piont">로마자가 아닌 단위 부호 표기 방법</span>
+							<div class="braile2"></div>
+							<span class="explanation">
+							<span class="piont">문장 안에 로마자가 둘 이상 연이어 나올때</span><br><br>
+								 1) 로마자 표는 첫 로마자 앞에만 적고, 로마자 
+									   종료표는 마지막 로마자 뒤에 한번만 표기<br>
+								 2) 로마자들 사이에 쓰인 문장 부호는 
+									‘영어 점자 규정’에 따라 적는다.
+							</span>
+						</div>
+				</div>
+				
+				<div class="swiper-slide">
+						<div class="content">
+							<span class="title">숫자</span><br>
+							<div class="braile3"></div>
+							<span class="explanation">
+							알파벳 기본형과 동일 하다.<br><br>
+
+							a,  b, c, d,  e, f, g, h,  i,  j<br>
+							0, 1,  2, 3, 4, 5, 6, 7, 8, 9<br>
+
+								<span class="small">*숫자 앞에 수표(3-4-5-6점)를 표시한다</span><br><br>
+								숫자 다음에 ‘ㄴ,ㄷ,ㅁ,ㅋ,ㅌ,ㅍ,ㅎ’ 또는 ‘운’의 약자가 이어나올 때에는 숫자와 한글을 띄어 적는 다.
+
+							</span>
+						</div>
+				</div>
+				
+				<div class="swiper-slide">
+						<div class="content">
+							<span class="title">숫자</span><br><br>
+							<span class="explanation">
+							1. 숫자가 붙임표로 이어지는 경우에 수표는 첫머리에 적고 붙임표 뒤에는 표기하지 않는다.<br>
+								<span class="small">* 줄이 바뀌는 경우 다음줄에 수표를 다시 표기
+								</span><br><br>
+							2. 숫자 + 붙임표 + 나/다/마/카/타/파/하 : ‘ㅏ’를 생략하지 않고 정자로 표기<br><br>
+								
+							3. 일곱자리 이상의 긴 숫자를 두 줄에 걸쳐 적을 경우
+								<ul style="list-style-type: none; padding: 0;">
+									<li>1) 자릿점 뒤에 붙임표(3-6점)을 적는다.</li>
+									<li>2) 다음줄에는 수표를 적지 않는다.</li>
+									<li>3) 윗줄에 적는 숫자는 4자리 이상이어야 한다.</li>
+								</ul>
+								<span class="small">* 단, 4자리 이상의 숫자가 자릿점이 없이 제시된 경우 임의로 붙임표를 붙이고 다음 줄에
+    							수표없이 숫자를 이어 적는다.
+								</span><br><br>
+							4.숫자가 물결표 다음에 이어질 경우에는 수표를 다시 표기한다.<br><br>
+							5.일곱자리 이상의 긴 숫자를 두 줄에 걸쳐 적을 경우
+								<ul style="list-style-type: none; padding: 0;">
+									<li>1) 자릿점 뒤에 붙임표(3-6점)을 적는다.</li>
+									<li>2) 다음줄에는 수표를 적지 않는다.</li>
+									<li>3)  윗줄에 적는 숫자는 4자리 이상이어야 한다.</li>
+								</ul>
+							</span>
+						</div>
+				</div>
+				
+				
+			</div>
+		</div>
+</body>
+	
+	<!--swiper.js-->
+	<script src="swiper.min.js"></script>
+    <script>
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true,
+			direction: 'vertical'
+		});
+    </script>
+</html>
