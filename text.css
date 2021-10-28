@@ -4,7 +4,7 @@ body{ background-image: url("han.jpg"); background-size: cover; margin: auto; co
 	}
 
 /*content*/
-[class^="braile"]{margin: 10% 0 0; width: 90%; background-repeat: no-repeat; background-size: contain; background-position: center;}
+[class^="braile"]{margin: 10% 0 0; width: 95%; background-repeat: no-repeat; background-size: contain; background-position: center;}
 
 #bar{width: 100%; height: 44px; }
 
