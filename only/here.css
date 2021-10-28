@@ -2,8 +2,8 @@
 /* CSS Document */
 
 [class^="braile"]{
-		margin: 15% 0 0; width: 100%;}
-	.braile{height: 50%; background-image: url("../qiuz/jarumm.png");
+		margin: 15% 0 0; width: 90%;}
+	.braile{height: 38%; background-image: url("../qiuz/jarumm.png");
 	background-size: contain; background-position: center;}
 	.braile1{height: 38%; background-image: url("../qiuz/jarumm jung.png");	background-size: contain; background-position: center;}
 	.braile2{height: 60%; background-image: url( "../qiuz/moumm.png");
