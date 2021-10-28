@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*index*/
+header input[id="menuicon"]+label .line{ background-color: white; }
+
+#menubar li .about{
+	color: #ED6B5B;
+	text-decoration-color: #ED6B5B;
+	text-underline-position: under;
+	text-decoration-thickness: 3px;
+}
+
+#menubar li .quiz, .study{text-decoration: none;}
+#menubar li a{color: white;}
+
+/*content*/
+#braille{
+	background-image: url("../braille.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#history{
+	background-image: url("../history.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#park{ background-image: url("../park.jpg"); background-position: center;
+		background-repeat: no-repeat; background-size: cover;
+}
+
+
+/*swiper*/
+.swiper-container {
+    height: 100%;
+    }

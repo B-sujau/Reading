@@ -1,0 +1,45 @@
+@charset "utf-8";
+/* CSS Document */
+
+header input[id="menuicon"]+label .line {background-color: black;}
+header input[id="menuicon"]+label .line{
+		background-color: white;}
+
+/*menubar*/
+#menubar li .study{
+	color: #ED6B5B;
+	text-decoration-color: #ED6B5B;
+	text-underline-position: under;
+	text-decoration-thickness: 3px;}
+#menubar li .about, .quiz{text-decoration: none;}
+#menubar li a{color: black;}
+
+/*content*/
+#space{height: 25%; 
+	   background-color: white;}
+#han{
+	background-image: url("../study_1.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: darkturquoise;
+}
+#en{
+	background-image: url("../study_2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: coral;
+}
+#code{
+	background-image: url("../study_3.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: blueviolet;
+}
+
+/*swiper*/
+.swiper-container {
+    height: 75%;
+}

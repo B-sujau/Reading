@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{color: black;}
+nav{ height: 25%;}
+article{height: 74%;}
+header input[id="menuicon"]+label .line {background-color: white;}
+
+/*menubar*/
+#menubar li .quiz{ color: #ED6B5B;
+				text-decoration-color: #ED6B5B;
+				text-underline-position: under;
+  				text-decoration-thickness: 3px;}
+#menubar li .about, .study{text-decoration: none;}
+
+/*content*/
+#btn{width: 120px;height: 50px; /*border-radius: 50px;*/ color: white; margin: 60% auto auto;
+line-height: 50px; display: flex;}
+#text{color: white; text-align: center; margin-top: 5%;}
+
+.about, .study{color: white;}
+.substance{height: 100%; width: 100%; text-align: center;
+		 background-image: url("../qiuz.png");
+		background-size: cover;}
+.btn{background-color: #F9AC66; width: 50px; height: 50px; border-radius: 100px; margin: 0 5% 0 5%;}
+
+

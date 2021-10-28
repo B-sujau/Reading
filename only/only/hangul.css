@@ -1,0 +1,27 @@
+@charset "utf-8";
+/* CSS Document */
+
+footer{font-family:"AppleSDGothicNeoL00"; font-size: 8px; color: #DADADA; text-align: left; margin: 0 5% ;}
+
+/*id*/
+#poto{width: 95%; height: 130px; margin: 5% 0 7%; float: right;
+	background-image: url("../hanggul/1920.jpg"); background-size: cover;}
+#poto2{width: 80%; height: 350px; margin: 10% 0 5%;
+	background-image: url("../hanggul/hun.png"); background-size: cover;}
+#say{text-align: center; font-size: 17px; color: #F9AC66; margin: 0 0 10% -5%;}
+
+
+/*classs*/
+.image{background-image: url("../hanggul/hanback.png"); background-size: cover;}
+.img2{background-color: aliceblue;}
+.main{width: 90.5%;}
+.con{margin: 1% 5%;}
+.title{margin-top: 13%; margin-left: 2%;}
+.con, #cover, .bb{margin: 0 5%;}
+.b {margin: 10% 5% 5%;}
+.d {margin: 5%;}
+.bb{text-align: left; font-family:"SF Pro Display"; font-size: 22px; margin: 9% 2.5% 5%; width: 50%;}
+.slidebox{
+		width: 80%; height: 30%; border: 1px solid #0018FF; margin: 10% 0 10% 10%;
+	}
+	
